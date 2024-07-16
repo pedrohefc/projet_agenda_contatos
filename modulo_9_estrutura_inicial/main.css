@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+header button{
+    cursor: pointer;
+    background-color: #dcedf0;
+    border: none;
+    font-weight: 300;
+}
+
+header button:hover{
+    background-color: #341f97;
+    color: #fff;
+    border: 0.1px solid white ;
+}
+
+form{
+    background-color: #dcedf0;
+    padding: 24px 0 8px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    margin-bottom: 4px;
+    color: #5f27cd;
+}
+
+input, button{
+    padding: 8px
+}
+
+form button{
+    color: #fff;
+    background-color: #5f27cd;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #341f97;
+}
+
+input:focus{
+    outline-color: #341f97;
+}
+
+.conteiner{
+    display: flex;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+ul li{
+    max-width: 25%;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+    text-align: center;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.overlay-imagem-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link:hover{
+    opacity: 1.5;
+    cursor: pointer;
+}
+
+.overlay-imagem-link a{
+    color: #fff;
+    text-decoration: none;
+}
